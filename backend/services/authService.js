@@ -4,9 +4,6 @@ const User = require('../models/User');
 const ResetToken = require('../models/ResetToken');
 const crypto = require('crypto');
 
-console.log(process.env.EMAIL_USER);
-console.log(process.env.EMAIL_PASS);
-
 // Create a transporter for Nodemailer (Gmail is used here)
 const transporter = nodemailer.createTransport({
   service: 'gmail',
